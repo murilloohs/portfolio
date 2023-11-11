@@ -1,5 +1,4 @@
 import './Header.css'
-// import logo from '../../images/LOGO.svg'
 import logo2 from '../../images/logo2.svg'
 
 export default function Header() {
