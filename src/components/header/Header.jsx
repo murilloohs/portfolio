@@ -15,15 +15,15 @@ export default function Header() {
           </li>
 
           <li>
-            <a href='#sobre'>Sobre</a>
+            <a href='#sobre' className='redir' >Sobre</a>
           </li>
 
           <li>
-            <a href='#projetos'>Projetos</a>
+            <a href='#projetos' className='redir' >Projetos</a>
           </li>
 
           <li>
-            <a href='#contato'>Contato</a>
+            <a href='#contato' className='redir' >Contato</a>
           </li>
 
         </ul>

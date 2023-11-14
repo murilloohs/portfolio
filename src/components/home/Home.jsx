@@ -13,8 +13,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='div-image-home'>
-        <img src={Foto} alt='uma selfie minha' className='foto-home'/>
+      <div className='div-border-image'>
+        <div className='div-image-home'>
+          <img src={Foto} alt='uma selfie minha' className='foto'/>
+        </div>
       </div>
 
     </div>

@@ -13,11 +13,6 @@
   margin-bottom: 0px;
 }
 
-.foto-home{
-  width: 500px;
-  height: auto;
-}
-
 .logo{
   width: 200px;
   height: 200px;
@@ -27,9 +22,13 @@
 .list{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;
   width: 300px;
   margin-right: 50px;
   font-weight: 900;
   font-size: 20px;
+}
+
+.redir {
+  margin-left: 25px;
 }

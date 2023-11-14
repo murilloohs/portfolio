@@ -1,3 +1,38 @@
 .div-home{
   background-color: #F7F7F7;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.div-image-home {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border: 10px double transparent;
+  box-shadow: 0 0 0 2px #000, 0 0 0 4px white;
+}
+
+.div-image-home img {
+  position: absolute;
+  top: -70px;
+  width: 100%;
+  bottom: 60px;
+}
+
+.div-text-home h1 {
+  font-size: 70px;
+  width: 460px;
+  line-height: 55px;
+}
+
+.div-text-home p {
+  width: 460px;
+  margin-right: 13rem;
+  font-size: 20px;
+  font-weight: 400;
 }
