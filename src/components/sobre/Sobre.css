@@ -1,4 +1,32 @@
-.foto-sobre{
-  width: 500px;
+.div-sobre {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.div-text-sobre {
+  width: 400px;
+  margin-left: 8rem;
+}
+
+.div-text-sobre {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.div-image-sobre {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  border: 10px double transparent;
+  box-shadow: 0 0 0 2px #000, 0 0 0 4px white;
+  margin-top: 2rem;
+}
+
+.div-image-sobre img {
+  width: 400px;
   height: auto;
 }

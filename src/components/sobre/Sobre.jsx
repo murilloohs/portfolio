@@ -6,7 +6,7 @@ export default function Sobre() {
   return (
     <div className='div-sobre' id='sobre'>
       <div className='div-image-sobre'>
-        <img src={Foto} alt='uma selfie minha' className='foto-sobre'/>
+        <img src={Foto} alt='uma selfie minha' />
       </div>
 
       <div className='div-text-sobre'>
