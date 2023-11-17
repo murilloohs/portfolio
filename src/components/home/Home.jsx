@@ -29,9 +29,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div class="wrapper">
+      <div className="wrapper">
         <a href="#sobre"> 
-          <div class="arrow">
+          <div className="arrow">
             <ul>
               <li></li>
               <li></li>

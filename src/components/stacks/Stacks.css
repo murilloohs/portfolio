@@ -1,0 +1,53 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+.div-stacks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7F7F7;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.wrapper-stacks {
+  max-width: 630px;
+  position: relative;
+}
+
+.wrapper-stacks i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #a8a8a8;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 46px;
+  font-size: 1.4rem;
+}
+
+.wrapper-stacks i:first-child {
+  left: -60px;
+}
+
+.wrapper-stacks i:last-child {
+  right: -60px;
+}
+
+.wrapper-stacks .carousel {
+  white-space: nowrap;
+  font-size: 0px;
+  overflow: hidden;
+  max-width: 800px;
+}
+
+.carousel img {
+  height: 130px;
+  width: auto;
+  margin-left: 8rem;
+}
+
+.carousel img:first-child {
+  margin-left: 0px;
+}
