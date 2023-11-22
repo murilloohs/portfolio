@@ -29,6 +29,7 @@
 
 .wrapper-stacks i:first-child {
   left: -60px;
+  display: none;
 }
 
 .wrapper-stacks i:last-child {
@@ -40,10 +41,22 @@
   font-size: 0px;
   overflow: hidden;
   max-width: 650px;
+  scroll-behavior: smooth;
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+
+.carousel.dragging {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+  pointer-events: none;
 }
 
 .carousel img {
-  /* width: 120px; */
   height: 160px;
   width: auto;
   margin-left: 5rem;
@@ -52,4 +65,26 @@
 
 .carousel img:first-child {
   margin-left: 0px;
+}
+
+.carousel {
+  display: flex;
+}
+
+.descricao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7F7F7;
+  width: 160px;
+  font-size: 20px;
+}
+
+figure {
+  margin-right: 0;
+  margin-left: 5rem;
+}
+
+figure:first-child {
+  margin-left: 0;
 }
