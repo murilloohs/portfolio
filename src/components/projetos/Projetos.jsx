@@ -51,7 +51,7 @@ const Projetos = () => {
       <div className='first-project'>
         <div ref={e => projectsRef.current[1] = e} className='div-fp-image'>
           <a target='_blank' href='https://google.com' rel="noreferrer">
-            <img src={CarrinhoCompras} alt='print de um website exemplo de carrinho de compras' className='fp-image'/>
+            <img src={CarrinhoCompras} alt='print de um website exemplo' className='fp-image'/>
           </a>
         </div>
         <div className='div-fp-text'>
