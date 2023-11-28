@@ -18,7 +18,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  /* background-color: #a8a8a8; */
   height: 46px;
   width: 46px;
   border-radius: 50%;
@@ -43,13 +42,9 @@
   overflow: hidden;
   max-width: 650px;
   scroll-behavior: smooth;
-  /* cursor: grab; */
-  /* cursor: -webkit-grab; */
 }
 
 .carousel.dragging {
-  /* cursor: grabbing;
-  cursor: -webkit-grabbing; */
   scroll-behavior: auto;
 }
 
