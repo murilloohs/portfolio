@@ -1,7 +1,7 @@
 import React, { useRef, useEffect} from 'react';
-import './Projetos.css'
+import './Projetos.css';
 
-import CarrinhoCompras from '../../images/carrinho-compras.png'
+import CarrinhoCompras from '../../images/carrinho-compras.png';
 
 const Projetos = () => {
   const projectsRef = useRef([]);
@@ -34,9 +34,9 @@ const Projetos = () => {
   });
 
   return (
-    <div className='div-projetos'>
+    <div className='div-projetos' id='projetos'>
       <h1>PROJETOS</h1>
-      <div className='first-project'>
+      <div className='projects'>
         <div ref={e => projectsRef.current[0] = e} className='div-fp-image'>
           <a target='_blank' href='https://google.com' rel="noreferrer">
             <img src={CarrinhoCompras} alt='print de um website exemplo de carrinho de compras' className='fp-image'/>
@@ -44,11 +44,15 @@ const Projetos = () => {
         </div>
         <div className='div-fp-text'>
           <h3>CARRINHO DE COMPRAS</h3>
-          <p>TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO</p>
+          <p>Um exemplo de site que utiliza a API do Mercado Livre para criar produtos e simular um carrinho de compras.</p>
+          <div className='div-buttons'>
+            <a href='https://google.com' target='_blank' rel="noreferrer" className='button-project'>Site</a>
+            <a href='https://github.com/murilloohs/shopping-cart-website' target='_blank' rel="noreferrer" className='button-project'>Código</a>
+          </div>
         </div>
 
       </div>
-      <div className='first-project'>
+      <div className='projects'>
         <div ref={e => projectsRef.current[1] = e} className='div-fp-image'>
           <a target='_blank' href='https://google.com' rel="noreferrer">
             <img src={CarrinhoCompras} alt='print de um website exemplo' className='fp-image'/>
@@ -57,6 +61,10 @@ const Projetos = () => {
         <div className='div-fp-text'>
           <h3>SEGUNDO PROJETO</h3>
           <p>TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO</p>
+          <div className='div-buttons'>
+          <a href='https://google.com' target='_blank' rel="noreferrer" className='button-project'>Site</a>
+            <a href='https://google.com' target='_blank' rel="noreferrer" className='button-project'>Código</a>
+          </div>
         </div>
       </div>
 

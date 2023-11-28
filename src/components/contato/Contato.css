@@ -1,0 +1,14 @@
+.div-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F7F7;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.div-contato h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
