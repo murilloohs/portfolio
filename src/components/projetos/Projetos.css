@@ -1,0 +1,39 @@
+.div-projetos {
+  margin-bottom: 200px;
+}
+
+.div-projetos h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.first-project {
+  display: flex;
+  width: 50%;
+  border: 0.3px solid #000000;
+  border-radius: 10px;
+  background-color: #F7F7F7;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+
+.div-fp-image {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+.fp-image {
+  width: 100%;
+  height: auto;
+}
+
+.div-fp-text {
+  width: 50%;
+  margin-left: 4rem;
+}
