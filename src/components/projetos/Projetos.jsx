@@ -15,7 +15,6 @@ const Projetos = () => {
     };
 
     const handleOut = (e) => {
-      console.log(e.target);
       e.target.style.transform = 'translateY(0%)';
       e.target.style.transition = 'transform 3s ease-in-out';
     };
