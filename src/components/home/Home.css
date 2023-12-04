@@ -15,7 +15,7 @@
   position: relative;
   border: 10px double transparent;
   box-shadow: 0 0 0 2px #000, 0 0 0 4px white;
-  margin-top: 12rem;
+  margin-top: 12%;
 }
 
 .div-image-home img {
@@ -26,22 +26,30 @@
 }
 
 .div-text-home h1 {
-  font-size: 70px;
+  font-size: 76px;
   width: 460px;
-  line-height: 55px;
-  margin-top: 12rem;
+  line-height: 60px;
+  margin-bottom: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.div-text-home:first-child {
+  margin-top: 12%;
 }
 
 .div-text-home p {
   width: 460px;
   margin-right: 13rem;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 400;
+  margin-bottom: 0;
+  word-spacing: -0.4rem;
 }
 
 .div-social-home {
   display: flex;
   align-items: center;
+  margin-top: 1rem;
 }
 
 #linkedin {
@@ -54,7 +62,6 @@
   width: 40px;
   height: auto;
 }
-
 
 .wrapper {
   width: 100%;
