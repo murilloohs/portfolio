@@ -15,6 +15,7 @@
 
 .div-backTop {
   margin-left: 80%;
+  cursor: pointer;
 }
 
 #backTop {
@@ -70,6 +71,7 @@
   border: 1px solid #000;
   font-size: larger;
   background-color: #caf8ca;
+  cursor: pointer;
 }
 
 .img-copy {
