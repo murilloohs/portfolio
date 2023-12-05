@@ -1,17 +1,22 @@
+import React from 'react'
 import './Home.css'
 
 import Foto from '../../images/foto.jpeg'
 import Linkedin from '../../images/linkedin.png'
 import Github from '../../images/github.png'
 
-export default function Home() {
+ const Home = () => {
+
   return (
     <>
       <div className='div-home' id='home'>
         <div className='div-text-home'>
           <p>Olá, eu sou o</p>
           <h1>Murillo Santos</h1>
-          <p>Full Stack Developer</p>
+          {/* <p>Full Stack Developer</p> */}
+          <p className='typing-text'>
+          <span></span>
+          </p>
   
           <div className='div-social-home'>
             <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/murillo-henrique-santos/'>
@@ -43,3 +48,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home;

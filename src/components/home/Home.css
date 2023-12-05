@@ -135,3 +135,45 @@
     transform: translateY(0);
   }
 }
+
+.typing-text span{
+  position: relative;
+  font-weight: 500;
+}
+
+.typing-text span::before{
+  content: '';
+  animation: palavras 25s infinite;
+}
+
+.typing-text span::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  border-left: 2px solid #000;
+  right: -3px;
+  animation: cursor .8s infinite, typing 25s steps(15) infinite;
+  width: calc(100% + 5px);
+  background-color: #F7F7F7;
+}
+
+@keyframes typing {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+    width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+    width: calc(100% + 5px);
+  }
+}
+
+@keyframes cursor {
+  0%{
+    border-left: 2px solid #F7F7F7;
+  }
+}
+
+@keyframes palavras {
+  0%, 100%{
+    content: "Full Stack Developer";
+  }
+}
