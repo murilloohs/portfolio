@@ -1,7 +1,7 @@
 import React, { useRef, useEffect} from 'react';
 import './Projetos.css';
 
-import CarrinhoCompras from '../../images/carrinho-compras.png';
+import CarrinhoCompras from '../../images/carrinho.png';
 
 const Projetos = () => {
   const projectsRef = useRef([]);
@@ -58,11 +58,11 @@ const Projetos = () => {
           </a>
         </div>
         <div className='div-fp-text'>
-          <h3>SEGUNDO PROJETO</h3>
-          <p>TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO</p>
+          <h3>TRIVIA GAME</h3>
+          <p>Trivia é um jogo de perguntas e respostas que utiliza uma API externa para fornecer as questões</p>
           <div className='div-buttons'>
           <a href='https://google.com' target='_blank' rel="noreferrer" className='button-project'>Site</a>
-            <a href='https://google.com' target='_blank' rel="noreferrer" className='button-project'>Código</a>
+            <a href='https://github.com/murilloohs/trivia-game' target='_blank' rel="noreferrer" className='button-project'>Código</a>
           </div>
         </div>
       </div>
