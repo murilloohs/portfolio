@@ -2,9 +2,11 @@ import React, { useRef, useEffect} from 'react';
 import './Projetos.css';
 
 import CarrinhoCompras from '../../images/carrinho.png';
+import Trivia from '../../trivia.mp4';
 
 const Projetos = () => {
   const projectsRef = useRef([]);
+  const videoRef = useRef([]);
 
   useEffect(() => {
     const projectsElement = projectsRef.current;
@@ -32,6 +34,18 @@ const Projetos = () => {
     };
   });
 
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    videoElement.addEventListener("mouseenter", () => {
+      videoElement.play();
+    });
+    
+    videoElement.addEventListener("mouseleave", () => {
+      videoElement.pause();
+    });
+  })
+
   return (
     <div className='div-projetos' id='projetos'>
       <h1>PROJETOS</h1>
@@ -52,9 +66,9 @@ const Projetos = () => {
 
       </div>
       <div className='projects'>
-        <div ref={e => projectsRef.current[1] = e} className='div-fp-image'>
+        <div className='div-fp-image'>
           <a target='_blank' href='https://trivia-murilloohs.vercel.app/' rel="noreferrer">
-            <img src={CarrinhoCompras} alt='video do site de trivia' className='fp-image'/>
+            <video ref={videoRef} src={Trivia} id='trivia-video'  alt='video demostrando como funciona o trivia'/>
           </a>
         </div>
         <div className='div-fp-text'>
