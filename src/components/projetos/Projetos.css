@@ -44,12 +44,13 @@
 .div-fp-text {
   width: 50%;
   padding-left: 2rem;
+  font-size: 1.2rem;
 }
 
 .div-buttons {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 25%;
+  padding-top: 15%;
 }
 
 .button-project {
