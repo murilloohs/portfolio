@@ -1,7 +1,8 @@
 import React from 'react'
 import './Home.css'
 
-import Foto from '../../images/foto.jpeg'
+// import Foto from '../../images/foto.jpeg'
+import Foto2 from '../../images/foto2.jpeg'
 import Linkedin from '../../images/linkedin.png'
 import Github from '../../images/github.png'
 
@@ -31,7 +32,7 @@ import Github from '../../images/github.png'
         </div>
 
         <div className='div-image-home'>
-          <img src={Foto} alt='uma selfie minha' className='foto'/>
+          <img src={Foto2} alt='uma foto minha' className='foto'/>
         </div>
       </div>
 
