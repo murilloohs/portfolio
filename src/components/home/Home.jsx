@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
 
-import Foto from '../../images/foto.jpeg'
+import Foto2 from '../../images/foto2.jpeg'
 import Linkedin from '../../images/linkedin.png'
 import Github from '../../images/github.png'
 
@@ -13,7 +13,6 @@ import Github from '../../images/github.png'
         <div className='div-text-home'>
           <p>Olá, eu sou o</p>
           <h1>Murillo Santos</h1>
-          {/* <p>Full Stack Developer</p> */}
           <p className='typing-text'>
           <span></span>
           </p>
@@ -31,7 +30,7 @@ import Github from '../../images/github.png'
         </div>
 
         <div className='div-image-home'>
-          <img src={Foto} alt='uma selfie minha' className='foto'/>
+          <img src={Foto2} alt='uma foto minha' className='foto'/>
         </div>
       </div>
 

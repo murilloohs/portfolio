@@ -43,6 +43,7 @@ const Projetos = () => {
     
     videoElement.addEventListener("mouseleave", () => {
       videoElement.pause();
+      videoElement.currentTime = 0;
     });
   })
 
