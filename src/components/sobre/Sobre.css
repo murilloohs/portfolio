@@ -6,10 +6,15 @@
 }
 
 .div-text-sobre {
-  width: 400px;
+  width: 540px;
   margin-left: 8rem;
   font-size: 20px;
   margin-top: 0;
+  line-height: 29px;
+}
+
+.div-text-sobre h1 {
+  margin-bottom: 40px;
 }
 
 .div-image-sobre {
