@@ -7,7 +7,7 @@ Desenvolvi este portfólio utilizando React, HTML, CSS e JavaScript.
 
 ![Screenshot](Screenshot.png)
 
-## Pre-requisitos
+## Pré-requisitos
 
 Antes de executar este projeto, certifique-se de ter as seguintes dependências instaladas:
 
