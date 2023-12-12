@@ -1,0 +1,87 @@
+.div-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F7F7;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.div-contato h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.div-backTop {
+  margin-left: 80%;
+  cursor: pointer;
+}
+
+#backTop {
+  height: 50px;
+  width: auto;
+}
+
+.div-copy {
+  position: relative;
+  display: inline-block;
+}
+
+.div-copy #copy-text {
+  visibility: hidden;
+  width: 140px;
+  background-color: #1e293b;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.div-copy #copy-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1e293b transparent transparent transparent;
+}
+
+.div-copy:hover #copy-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 380px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  font-size: larger;
+  background-color: #caf8ca;
+  cursor: pointer;
+}
+
+.img-copy {
+  height: 50px;
+  width: auto;
+  padding-right: 20px;
+}
+
+.logo-linkedin-cnt {
+  height: 60px;
+  width: auto;
+  margin-top: 30px;
+}
