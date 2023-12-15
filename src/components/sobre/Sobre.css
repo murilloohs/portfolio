@@ -19,12 +19,12 @@
 
 .div-image-sobre {
   width: auto;
-  height: auto;
+  height: 90%;
   overflow: hidden;
   position: relative;
   border: 10px double transparent;
   box-shadow: 0 0 0 2px #000, 0 0 0 4px white;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .div-image-sobre img {
