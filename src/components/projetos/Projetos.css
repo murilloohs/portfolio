@@ -50,7 +50,7 @@
 .div-buttons {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 .button-project {

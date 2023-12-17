@@ -58,7 +58,7 @@ const Projetos = () => {
         </div>
         <div className='div-fp-text'>
           <h3>CARRINHO DE COMPRAS</h3>
-          <p>Um exemplo de site que utiliza a API do Mercado Livre para criar produtos e simular um carrinho de compras.</p>
+          <p>Um exemplo de site que utiliza a API do Mercado Livre para criar produtos e simular um carrinho de compras. O valor total é atualizado dinamicamente.</p>
           <div className='div-buttons'>
             <a href='https://shopping-cart-murilloohs.vercel.app/' target='_blank' rel="noreferrer" className='button-project'>Site</a>
             <a href='https://github.com/murilloohs/shopping-cart-website' target='_blank' rel="noreferrer" className='button-project'>Código</a>
@@ -74,7 +74,7 @@ const Projetos = () => {
         </div>
         <div className='div-fp-text'>
           <h3>TRIVIA GAME</h3>
-          <p>Trivia é um jogo de perguntas e respostas que utiliza uma API externa para fornecer as questões</p>
+          <p>Trivia é um jogo de perguntas e respostas que utiliza uma API externa para fornecer as questões. Ao final é possível ver o ranking local para comparar as pontuações.</p>
           <div className='div-buttons'>
             <a href='https://trivia-murilloohs.vercel.app/' target='_blank' rel="noreferrer" className='button-project'>Site</a>
             <a href='https://github.com/murilloohs/trivia-game' target='_blank' rel="noreferrer" className='button-project'>Código</a>
