@@ -43,21 +43,21 @@ const Header = () => {
               </svg>
             </button>
             <ul className='list'>
-                <li>
-                  <a href='#home' onClick={ toggleSidebar }>Home</a>
-                </li>
+              <li>
+                <a href='#home' onClick={ toggleSidebar }>Home</a>
+              </li>
       
-                <li>
-                  <a href='#sobre' className='redir' onClick={ toggleSidebar }>Sobre</a>
-                </li>
+              <li>
+                <a href='#sobre' className='redir' onClick={ toggleSidebar }>Sobre</a>
+              </li>
       
-                <li>
-                  <a href='#projetos' className='redir' onClick={ toggleSidebar }>Projetos</a>
-                </li>
+              <li>
+                <a href='#projetos' className='redir' onClick={ toggleSidebar }>Projetos</a>
+              </li>
 
-                <li>
-                  <a href='#contato' className='redir' onClick={ toggleSidebar }>Contato</a>
-                </li>
+              <li>
+                <a href='#contato' className='redir' onClick={ toggleSidebar }>Contato</a>
+              </li>
             </ul>
           </nav>
         </div>
