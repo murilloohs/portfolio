@@ -29,25 +29,6 @@ const Header = () => {
           <img src={logo2} alt='logo' className='logo'/>
         </div>
 
-        {/* <ul className='list'>
-          <li>
-            <a href='#home'>Home</a>
-          </li>
-
-          <li>
-            <a href='#sobre' className='redir' >Sobre</a>
-          </li>
-
-          <li>
-            <a href='#projetos' className='redir' >Projetos</a>
-          </li>
-
-          <li>
-            <a href='#contato' className='redir' >Contato</a>
-          </li>
-
-        </ul> */}
-
         <button onClick={toggleSidebar} className="btn-icon-header" id='open-btn' >
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
             <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>

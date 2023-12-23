@@ -139,6 +139,7 @@
     margin-top: 10rem;
     height: 40vh;
     width: 40%;
+    z-index: 9999;
   }
 
   .list li {
