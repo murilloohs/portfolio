@@ -85,3 +85,46 @@ figure {
 figure:first-child {
   margin-left: 0;
 }
+
+@media (max-width: 1200px) {
+  .wrapper-stacks {
+    max-width: 100%;
+  }
+
+  .wrapper-stacks i {
+    display: none;
+  }
+
+  .wrapper-stacks .carousel {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 13rem);
+    grid-template-rows: 11rem 11rem 11rem;
+    grid-row-gap: 4rem;
+    max-width: 100%;
+  }
+
+  .wrapper-stacks .carousel figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 15%;
+  }
+
+  .carousel img {
+    height: 100%;
+    width: auto;
+  }
+
+  figure {
+    width: 60%;
+    height: 80%;
+  }
+
+  .wrapper-stacks .carousel figure {
+    align-self: center;
+    justify-self: center;
+  }
+}
