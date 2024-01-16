@@ -22,7 +22,7 @@
   position: absolute;
   top: -170px;
   width: 100%;
-  bottom: 60px;
+  /* bottom: 60px; */
 }
 
 .div-text-home h1 {
@@ -136,6 +136,10 @@
   }
 }
 
+.desc-mobile {
+  display: none;
+}
+
 .typing-text span{
   position: relative;
   font-weight: 500;
@@ -174,6 +178,64 @@
 
 @keyframes palavras {
   0%, 100%{
-    content: "Desenvolvedor Front End";
+    content: "Desenvolvedor Front-End";
+  }
+}
+
+@media (max-width: 1200px) {
+  .div-home{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .div-image-home {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 1rem;
+    z-index: 1;
+    margin-bottom: 0;
+  }
+
+  .div-image-home img {
+    top: -110px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .div-text-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .div-text-home:first-child {
+    margin-top: 3rem;
+  }
+
+  .div-text-home h1 {
+    font-size: 2rem;
+    width: auto;
+    line-height: 50px;
+    margin: auto;
+  }
+  
+  .div-text-home p {
+    width: auto;
+    margin: auto;
+    font-size: 23px;
+  }
+
+  .desc-mobile {
+    display: flex;
+  }
+
+  .typing-text span{
+    display: none;
+  }
+
+  .wrapper {
+    display: none;
   }
 }

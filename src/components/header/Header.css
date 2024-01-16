@@ -31,3 +31,139 @@
 .redir {
   margin-left: 25px;
 }
+
+.nav-header {
+  width: 100%;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.btn-icon-header{
+  background: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .div-header{
+    position: fixed;
+    top: 0;
+    background: #ffffff;
+    justify-content: space-between;
+    padding: 0 2%;
+    height: 3.5rem;
+    width: 100%;
+    margin-top: 0;
+    z-index: 999;
+  }
+
+  .logo{
+    width: 10rem;
+    height: auto;
+    padding-top: 5px;
+  }
+
+  .nav-header{
+    position: absolute;
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-end;
+    background: linear-gradient(50deg, #394f9b, #2d4cba);
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    overflow: hidden;
+    z-index: 999;
+  }
+
+  .hide {
+    animation: hiddenSidebar 0.6s cubic-bezier(0.46, 0.28, 0.61, 0.99);
+    overflow: hidden;
+  }
+
+  .show {
+    display: flex;
+    position: fixed;
+    right: 0;
+    animation: showSidebar 0.6s cubic-bezier(0.46, 0.28, 0.61, 0.99);
+  }
+
+  .sidebar-wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  .btn-icon-header{
+    display: block;
+  }
+
+  #open-btn {
+    margin-right: 2rem;
+    padding: 0;
+    padding-top: 0.3rem;
+  }
+
+  #close-btn{
+    display: flex;
+    padding: 0;
+    margin-right: 1.1rem;
+    padding-top: 0.6rem;
+  }
+
+  .redir {
+    margin-left: 0;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 40vh;
+    width: 100%;
+    z-index: 9999;
+    margin-top: 11rem;
+    margin-right: 0;
+  }
+
+  .list li {
+    padding-bottom: 20px;
+    margin: auto;
+  }
+
+  .list li a {
+    padding-bottom: 20px;
+    color: white;
+  }
+}
+
+@keyframes showSidebar {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes hiddenSidebar {
+  from {
+    right: 0;
+  }
+  to {
+    right: -100%;
+  }
+}
