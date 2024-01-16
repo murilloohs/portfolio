@@ -75,9 +75,49 @@
   color: #fff;
 }
 
+.image-mobile {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .button-project {
     font-size: 1.125rem;
     padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .projects {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .div-fp-text {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .div-fp-image {
+    width: 100%;
+    height: auto;
+  }
+
+  #trivia-video {
+    display: none;
+  }
+
+  .fp-image {
+    display: none;
+  }
+
+  .div-buttons {
+    padding-top: 3%;
+  }
+
+  .image-mobile {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
   }
 }

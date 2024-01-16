@@ -3,6 +3,8 @@ import './Projetos.css';
 
 import CarrinhoCompras from '../../images/carrinho.png';
 import Trivia from '../../trivia.mp4';
+import CarrinhoMb from '../../images/carrinho-mobile.png';
+import TriviaMb from '../../images/trivia-mobile.png';
 
 const Projetos = () => {
   const projectsRef = useRef([]);
@@ -51,25 +53,10 @@ const Projetos = () => {
     <div className='div-projetos' id='projetos'>
       <h1>PROJETOS</h1>
       <div className='projects'>
-        <div ref={e => projectsRef.current[0] = e} className='div-fp-image'>
-          <a target='_blank' href='https://shopping-cart-murilloohs.vercel.app/' rel="noreferrer">
-            <img src={CarrinhoCompras} alt='print de um website exemplo de carrinho de compras' className='fp-image'/>
-          </a>
-        </div>
-        <div className='div-fp-text'>
-          <h3>CARRINHO DE COMPRAS</h3>
-          <p>Um exemplo de site que utiliza a API do Mercado Livre para criar produtos e simular um carrinho de compras. O valor total é atualizado dinamicamente.</p>
-          <div className='div-buttons'>
-            <a href='https://shopping-cart-murilloohs.vercel.app/' target='_blank' rel="noreferrer" className='button-project'>Site</a>
-            <a href='https://github.com/murilloohs/shopping-cart-website' target='_blank' rel="noreferrer" className='button-project'>Código</a>
-          </div>
-        </div>
-
-      </div>
-      <div className='projects'>
         <div className='div-fp-image'>
           <a target='_blank' href='https://trivia-murilloohs.vercel.app/' rel="noreferrer">
             <video ref={videoRef} src={Trivia} id='trivia-video'  alt='video demostrando como funciona o trivia'/>
+            <img src={TriviaMb} alt='print de um website de trivia' className='image-mobile' />
           </a>
         </div>
         <div className='div-fp-text'>
@@ -82,6 +69,23 @@ const Projetos = () => {
         </div>
       </div>
 
+      <div className='projects'>
+        <div ref={e => projectsRef.current[0] = e} className='div-fp-image'>
+          <a target='_blank' href='https://shopping-cart-murilloohs.vercel.app/' rel="noreferrer">
+            <img src={CarrinhoCompras} alt='print de um website exemplo de carrinho de compras' className='fp-image'/>
+            <img src={CarrinhoMb} alt='print de um website exemplo de carrinho de compras' className='image-mobile'/>
+          </a>
+        </div>
+        <div className='div-fp-text'>
+          <h3>CARRINHO DE COMPRAS</h3>
+          <p>Um exemplo de site que utiliza a API do Mercado Livre para criar produtos e simular um carrinho de compras. O valor total é atualizado dinamicamente.</p>
+          <div className='div-buttons'>
+            <a href='https://shopping-cart-murilloohs.vercel.app/' target='_blank' rel="noreferrer" className='button-project'>Site</a>
+            <a href='https://github.com/murilloohs/shopping-cart-website' target='_blank' rel="noreferrer" className='button-project'>Código</a>
+          </div>
+        </div>
+
+      </div>
     </div>
   )
 }
