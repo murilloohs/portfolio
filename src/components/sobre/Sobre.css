@@ -36,6 +36,7 @@
   .div-sobre {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    padding-top: 8%;
   }
 
   .div-image-sobre {
@@ -47,6 +48,10 @@
     margin-left: 0;
     font-size: 20px;
     line-height: 29px;
+  }
+
+  .div-text-sobre h1 {
+    text-align: center;
   }
 
   .div-text-sobre p:last-child {
