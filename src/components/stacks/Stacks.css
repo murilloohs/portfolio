@@ -1,83 +1,3 @@
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
-
-.div-stacks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #F7F7F7;
-  padding: 4rem 1rem;
-}
-
-.wrapper-stacks {
-  max-width: 800px;
-  width: 100%;
-  position: relative;
-}
-
-.stack-figure {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.stack-figure img {
-  max-width: 100px;
-  max-height: 100px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-}
-
-.descricao {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #333;
-}
-
-.swiper-button-next,
-.swiper-button-prev,
-.swiper-pagination-bullet {
-  color: #007aff;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #007aff;
-}
-
-.swiper-button-prev {
-  left: -25px;
-  top: 95px;
-}
-
-.swiper-button-next {
-  right: -25px;
-  top: 95px;
-}
-
-.swiper-pagination {
-  position: relative;
-  margin-top: 30px;
-}
-
-@media (max-width: 768px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
-  }
-
-  .wrapper-stacks {
-    padding: 0;
-  }
-} */
-
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
 
 .div-stacks {
@@ -124,11 +44,6 @@
 .swiper-pagination-bullet {
   color: #007aff;
 }
-
-/* .swiper-pagination {
-  position: relative;
-  margin-top: 1000px;
-} */
 
 .swiper-pagination-bullet-active {
   background-color: #007aff;
