@@ -37,13 +37,11 @@ const Stacks = () => {
         
         <Swiper
           modules={[Navigation, Pagination]}
-          navigation={{
-            prevEl: navigationPrevRef.current,
-            nextEl: navigationNextRef.current,
-          }}
-          onBeforeInit={(swiper) => {
+          onInit={(swiper) => {
             swiper.params.navigation.prevEl = navigationPrevRef.current;
             swiper.params.navigation.nextEl = navigationNextRef.current;
+            swiper.navigation.init();
+            swiper.navigation.update();
           }}
           pagination={{ clickable: true }}
           loop={false}
@@ -65,7 +63,7 @@ const Stacks = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-
+        
         <div ref={navigationNextRef} className="swiper-button-next"></div>
       </div>
     </div>
