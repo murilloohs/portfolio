@@ -13,7 +13,7 @@ import Github from '../../images/github.png'
         <div className='div-text-home'>
           <p>Olá, eu sou o</p>
           <h1>Murillo Santos</h1>
-          <p className='desc-mobile'>Desenvolvedor Front-End</p>
+          <p className='desc-mobile'>Desenvolvedor Full Stack</p>
           <p className='typing-text'>
           <span></span>
           </p>
