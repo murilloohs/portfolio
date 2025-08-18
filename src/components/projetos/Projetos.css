@@ -79,6 +79,16 @@
   display: none;
 }
 
+.div-fp-image .fp-image {
+  transform: translateY(0%);
+  transition: transform 3s ease-in-out;
+}
+
+.div-fp-image:hover .fp-image {
+  transform: translateY(-77%);
+  transition: transform 6s ease-in-out;
+}
+
 @media (min-width: 768px) {
   .button-project {
     font-size: 1.125rem;

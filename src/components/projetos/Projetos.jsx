@@ -1,61 +1,44 @@
-import React, { useRef, useEffect} from 'react';
+import { useRef } from 'react';
 import './Projetos.css';
 
-import CarrinhoCompras from '../../images/carrinho.png';
 import Trivia from '../../trivia.mp4';
-import CarrinhoMb from '../../images/carrinho-mobile.png';
 import TriviaMb from '../../images/trivia-mobile.png';
+import Netflix from '../../images/netflix.jpg';
+import NetflixMb from '../../images/netflix-mobile.png';
 
 const Projetos = () => {
-  const projectsRef = useRef([]);
-  const videoRef = useRef([]);
+  const videoRef = useRef(null);
 
-  useEffect(() => {
-    const projectsElement = projectsRef.current;
+  const handleVideoPlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
 
-    const handleOver = (e) => {
-      e.target.style.transform = 'translateY(-86%)';
-      e.target.style.transition = 'transform 8s ease-in-out';
-    };
-
-    const handleOut = (e) => {
-      e.target.style.transform = 'translateY(0%)';
-      e.target.style.transition = 'transform 3s ease-in-out';
-    };
-
-    projectsElement.forEach(project => {
-      project.addEventListener("mouseover", handleOver);
-      project.addEventListener("mouseout", handleOut);
-    });
-
-    return () => {
-      projectsElement.forEach(project => {
-        project.removeEventListener("mouseover", handleOver);
-        project.removeEventListener("mouseout", handleOut);
-      });
-    };
-  });
-
-  useEffect(() => {
-    const videoElement = videoRef.current;
-
-    videoElement.addEventListener("mouseenter", () => {
-      videoElement.play();
-    });
-    
-    videoElement.addEventListener("mouseleave", () => {
-      videoElement.pause();
-      videoElement.currentTime = 0;
-    });
-  })
+  const handleVideoPause = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
 
   return (
     <div className='div-projetos' id='projetos'>
       <h1>PROJETOS</h1>
       <div className='projects'>
-        <div className='div-fp-image'>
+        <div 
+          className='div-fp-image'
+          onMouseEnter={handleVideoPlay}
+          onMouseLeave={handleVideoPause}
+        >
           <a target='_blank' href='https://trivia-murilloohs.vercel.app/' rel="noreferrer">
-            <video ref={videoRef} src={Trivia} id='trivia-video'  alt='video demostrando como funciona o trivia'/>
+            <video 
+              ref={videoRef} 
+              src={Trivia} 
+              id='trivia-video' 
+              muted
+              playsInline
+            />
             <img src={TriviaMb} alt='print de um website de trivia' className='image-mobile' />
           </a>
         </div>
@@ -70,24 +53,23 @@ const Projetos = () => {
       </div>
 
       <div className='projects'>
-        <div ref={e => projectsRef.current[0] = e} className='div-fp-image'>
-          <a target='_blank' href='https://shopping-cart-murilloohs.vercel.app/' rel="noreferrer">
-            <img src={CarrinhoCompras} alt='print de um website exemplo de carrinho de compras' className='fp-image'/>
-            <img src={CarrinhoMb} alt='print de um website exemplo de carrinho de compras' className='image-mobile'/>
+        <div className='div-fp-image'> 
+          <a target='_blank' href='https://netflix-clone-murilloohs.vercel.app/' rel="noreferrer">
+            <img src={Netflix} alt='print do site com a interface principal da Netflix' className='fp-image'/>
+            <img src={NetflixMb} alt='print do site com a interface principal da Netflix' className='image-mobile'/>
           </a>
         </div>
         <div className='div-fp-text'>
-          <h3>CARRINHO DE COMPRAS</h3>
-          <p>Um exemplo de site que utiliza a API do Mercado Livre para criar produtos e simular um carrinho de compras. O valor total é atualizado dinamicamente.</p>
+          <h3>CLONE NETFLIX</h3>
+          <p>Clone da interface principal da Netflix. A aplicação consome dados da API do The Movie Database (TMDb) para exibir listas de filmes e séries de forma dinâmica.</p>
           <div className='div-buttons'>
-            <a href='https://shopping-cart-murilloohs.vercel.app/' target='_blank' rel="noreferrer" className='button-project'>Site</a>
-            <a href='https://github.com/murilloohs/shopping-cart-website' target='_blank' rel="noreferrer" className='button-project'>Código</a>
+            <a href='https://netflix-clone-murilloohs.vercel.app/' target='_blank' rel="noreferrer" className='button-project'>Site</a>
+            <a href='https://github.com/murilloohs/netflix' target='_blank' rel="noreferrer" className='button-project'>Código</a>
           </div>
         </div>
-
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Projetos;
